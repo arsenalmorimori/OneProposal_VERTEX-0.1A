@@ -1,0 +1,125 @@
+﻿using System.Collections.ObjectModel;
+using Firebase.Database;
+using Microsoft.Maui.Storage;
+
+namespace OneProposal_VERTEX_0._1A;
+
+public partial class ProposalPage : ContentPage {
+
+    private readonly FirebaseClient firebase = new FirebaseClient("https://oneproposal-onedev-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    public string club = "CoPs";
+
+    public ProposalPage() {
+        InitializeComponent();
+    }
+
+    private async void Button_Clicked_1(object sender, EventArgs e) {
+        await Shell.Current.GoToAsync("..");
+    }
+
+    private void OnOtherCheckedChanged(object sender, CheckedChangedEventArgs e) {
+        if (sender is RadioButton rb) {
+            entryOther.IsVisible = rb.IsChecked;
+        }
+    }
+
+    private void OnOtherCheckedChanged2(object sender, CheckedChangedEventArgs e) {
+        if (sender is RadioButton rb) {
+            entryRB2.IsVisible = rb.IsChecked;
+        }
+    }
+
+    //  --------------- VENUE ---------------
+    public string[] venues = {
+        "Room 201", "Room 202", "Room 203", "Room 204", "Room 205", "Room 206", "Room 207", "Room 208", "Room 209", "Room 210",
+        "Room 301", "Room 302", "Room 303", "Room 304", "Room 305", "Room 306", "Room 307", "Room 308", "Room 309", "Room 310",
+        "ComLab 1", "ComLab 2", "Aquarium", "Other"
+    };
+
+    protected override void OnAppearing() {
+        base.OnAppearing();
+        int index = 0;
+
+        foreach (var venue in venues) {
+            var checkBox = new CheckBox();
+            checkBox.CheckedChanged += (s, e) => { if (venue == "Other") entryOtherVenue.IsVisible = e.Value; };
+
+            venueGrid.Add(new HorizontalStackLayout { Children = { checkBox, new Label { Text = venue } } }, index % 3, index / 3);
+            index++;
+        }
+    }
+
+    //  --------------- INSERT ---------------
+    private async void OnDoneClicked(object sender, EventArgs e) {
+        // Get selected type of activity
+        string activityType = rbMinor.IsChecked ? "Minor" :
+                              rbMajor.IsChecked ? "Major" :
+                              rbOther.IsChecked ? entryOther.Text : "N/A";
+
+        // Get selected reach type
+        string reachType = rb2_01.IsChecked ? "School-wide" :
+                           rb2_02.IsChecked ? "Within SHS Club" :
+                           rb2_03.IsChecked ? "Within subject/class" :
+                           rb2_04.IsChecked ? entryRB2.Text : "N/A";
+
+        // Get selected venue
+        string selectedVenue = "";
+        foreach (var child in venueGrid.Children) {
+            if (child is HorizontalStackLayout hsl && hsl.Children[0] is CheckBox cb && cb.IsChecked) {
+                selectedVenue += ((Label)hsl.Children[1]).Text + ", ";
+            }
+        }
+        selectedVenue = selectedVenue.TrimEnd(',', ' ');  // Remove trailing comma
+
+        if (rbOther.IsChecked) selectedVenue += $" (Other: {entryOtherVenue.Text})";
+
+        // Create object with form data
+        var activity = new ActivityDetails {
+            Club = club,
+            Status = "Submitted",
+            Remarks = null,
+            Title = et01_title.Text,
+            Rationale = et02_rational.Text,
+            Objectives = et03_objective.Text,
+            TypeOfActivity = activityType,
+            Date = datePicker.Date.ToString("MMMM dd, yyyy"),
+            Venue = selectedVenue,
+            Reach = reachType
+        };
+
+        // Display pop-up confirmation
+        string message = $"🎭 Club: \n\n {activity.Club}\n\n\n" +
+                         $"🚀 Status: \n\n {activity.Status}\n\n\n" +
+                         $"💬 Remarks: \n\n {activity.Remarks}\n\n\n" +
+                         $"📌 Title: \n\n {activity.Title}\n\n\n\n" +
+                         $"📝  Rationale:\n\n {activity.Rationale}\n\n\n" +
+                         $"🎯 Objectives:\n\n {activity.Objectives}\n\n\n" +
+                         $"📅 Date:\n\n {activity.Date}\n\n\n" +
+                         $"🏢 Venue: \n\n {activity.Venue}\n\n\n" +
+                         $"📊 Type of Activity:\n\n {activity.TypeOfActivity}\n\n\n" +
+                         $"🌎 Reach:\n\n {activity.Reach}";
+
+        bool isConfirmed = await DisplayAlert("Confirm Submission", message, "Confirm", "Cancel");
+
+        await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
+        await firebase.Child(("NotificationFor" + club) as string).PostAsync(activity.Title + " of " + activity.Club + " is SUBMITTED");
+
+        if (isConfirmed) {
+            await DisplayAlert("Success", "Activity has been submitted!", "OK");
+        }
+    }
+
+    //  --------------- OBJECTS ---------------
+    public class ActivityDetails {
+        public string Club { get; set; }
+        public string Status { get; set; }
+        public string Remarks { get; set; }
+        public string Title { get; set; }
+        public string Rationale { get; set; }
+        public string Objectives { get; set; }
+        public string TypeOfActivity { get; set; }
+        public string Date { get; set; }
+        public string Venue { get; set; }
+        public string Reach { get; set; }
+    }
+}

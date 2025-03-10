@@ -1,0 +1,9 @@
+﻿<maui:MauiWinUIApplication
+    x:Class="OneProposal_VERTEX_0._1A.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:OneProposal_VERTEX_0._1A.WinUI">
+
+</maui:MauiWinUIApplication>
+
