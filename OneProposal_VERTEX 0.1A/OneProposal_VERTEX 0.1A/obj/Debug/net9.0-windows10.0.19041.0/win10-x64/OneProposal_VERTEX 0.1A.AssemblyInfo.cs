@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneProposal_VERTEX 0.1A")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+962fda269b21ea3145d1bf2387445ccbdc205487")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneProposal_VERTEX 0.1A")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneProposal_VERTEX 0.1A")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

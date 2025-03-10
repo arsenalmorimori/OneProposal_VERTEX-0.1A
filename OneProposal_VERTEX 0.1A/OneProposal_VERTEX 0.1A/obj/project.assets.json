@@ -29781,11 +29781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj",
+      "projectUniqueName": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj",
       "projectName": "OneProposal_VERTEX 0.1A",
-      "projectPath": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj",
+      "projectPath": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj",
       "packagesPath": "C:\\Users\\Nesty\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\obj\\",
+      "outputPath": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

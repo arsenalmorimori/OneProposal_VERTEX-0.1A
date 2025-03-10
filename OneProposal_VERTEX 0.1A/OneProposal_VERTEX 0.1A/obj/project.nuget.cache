@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sO09brPcJmg=",
+  "dgSpecHash": "7GYON2ADMbA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj",
+  "projectFilePath": "C:\\Users\\Nesty\\Programming\\07 MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nesty\\.nuget\\packages\\firebase.database\\1.0.0\\firebase.database.1.0.0.nupkg.sha512",
     "C:\\Users\\Nesty\\.nuget\\packages\\googlegson\\2.11.0.3\\googlegson.2.11.0.3.nupkg.sha512",
