@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using Firebase.Database;
 using Microsoft.Maui.Storage;
+using static OneProposal_VERTEX_0._1A.ProposalPage;
 
 namespace OneProposal_VERTEX_0._1A;
 
@@ -49,8 +50,33 @@ public partial class ProposalPage : ContentPage {
         }
     }
 
+    //  --------------- SAVE AS DRAFT ---------------
+    private void DraftCliked(object sender, EventArgs e) {
+        saveToFirebase("DRAFT", "save as DRAFT");
+
+    }
+
     //  --------------- INSERT ---------------
     private async void OnDoneClicked(object sender, EventArgs e) {
+        saveToFirebase("SUBMITTED", "SUBMITTED");
+    }
+
+    //  --------------- OBJECTS ---------------
+    public class ActivityDetails {
+        public string Club { get; set; }
+        public string Status { get; set; }
+        public string Remarks { get; set; }
+        public string Title { get; set; }
+        public string Rationale { get; set; }
+        public string Objectives { get; set; }
+        public string TypeOfActivity { get; set; }
+        public string Date { get; set; }
+        public string Venue { get; set; }
+        public string Reach { get; set; }
+    }
+
+
+    private async void saveToFirebase(string save, string notifMessage) {
         // Get selected type of activity
         string activityType = rbMinor.IsChecked ? "Minor" :
                               rbMajor.IsChecked ? "Major" :
@@ -76,7 +102,7 @@ public partial class ProposalPage : ContentPage {
         // Create object with form data
         var activity = new ActivityDetails {
             Club = club,
-            Status = "Submitted",
+            Status = save,
             Remarks = null,
             Title = et01_title.Text,
             Rationale = et02_rational.Text,
@@ -87,39 +113,70 @@ public partial class ProposalPage : ContentPage {
             Reach = reachType
         };
 
-        // Display pop-up confirmation
-        string message = $"🎭 Club: \n\n {activity.Club}\n\n\n" +
-                         $"🚀 Status: \n\n {activity.Status}\n\n\n" +
-                         $"💬 Remarks: \n\n {activity.Remarks}\n\n\n" +
-                         $"📌 Title: \n\n {activity.Title}\n\n\n\n" +
-                         $"📝  Rationale:\n\n {activity.Rationale}\n\n\n" +
-                         $"🎯 Objectives:\n\n {activity.Objectives}\n\n\n" +
-                         $"📅 Date:\n\n {activity.Date}\n\n\n" +
-                         $"🏢 Venue: \n\n {activity.Venue}\n\n\n" +
-                         $"📊 Type of Activity:\n\n {activity.TypeOfActivity}\n\n\n" +
-                         $"🌎 Reach:\n\n {activity.Reach}";
 
-        bool isConfirmed = await DisplayAlert("Confirm Submission", message, "Confirm", "Cancel");
+        if (save == "SUBMITTED") {
+            if (string.IsNullOrWhiteSpace(et01_title.Text) ||
+                string.IsNullOrWhiteSpace(et02_rational.Text) ||
+                string.IsNullOrWhiteSpace(et03_objective.Text) ||
+                string.IsNullOrWhiteSpace(selectedVenue) ||
+                string.IsNullOrWhiteSpace(activityType) ||
+                string.IsNullOrWhiteSpace(reachType)) {
+                DisplayAlert("Please Fill all Requirements", "Please check again your Activity Proposal Form", "OK");
+            } else {
+                // Display pop-up confirmation
+                string message = $"🎭 Club: \n\n {activity.Club}\n\n\n" +
+                                 $"🚀 Status: \n\n {activity.Status}\n\n\n" +
+                                 $"📌 Title: \n\n {activity.Title}\n\n\n\n" +
+                                 $"📝  Rationale:\n\n {activity.Rationale}\n\n\n" +
+                                 $"🎯 Objectives:\n\n {activity.Objectives}\n\n\n" +
+                                 $"📅 Date:\n\n {activity.Date}\n\n\n" +
+                                 $"🏢 Venue: \n\n {activity.Venue}\n\n\n" +
+                                 $"📊 Type of Activity:\n\n {activity.TypeOfActivity}\n\n\n" +
+                                 $"🌎 Reach:\n\n {activity.Reach}";
 
-        await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
-        await firebase.Child(("NotificationFor" + club) as string).PostAsync(activity.Title + " of " + activity.Club + " is SUBMITTED");
+                bool isConfirmed = await DisplayAlert("Confirm Submission", message, "Confirm", "Cancel");
+                if (isConfirmed) {
+                    await DisplayAlert("Success", "Activity has been " + notifMessage + " !", "OK");
+                }
 
-        if (isConfirmed) {
-            await DisplayAlert("Success", "Activity has been submitted!", "OK");
+                await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
+
+                // NOTIFICATION FOR  "CLUB"
+                await firebase.Child(("NotificationFor" + club) as string).PostAsync(activity.Title + " (" + activity.Club + ")  has been " + notifMessage);
+
+                // NOTIFICATION FOR  "ADMIN"
+                await firebase.Child(("NotificationForAdmin") as string).PostAsync(activity.Title + " (" + activity.Club + ")  has been " + notifMessage);
+
+               
+            }
+        } else if (save == "DRAFT") {
+            string message = $"🎭 Club: \n\n {activity.Club}\n\n\n" +
+                                 $"🚀 Status: \n\n {activity.Status}\n\n\n" +
+                                 $"📌 Title: \n\n {activity.Title}\n\n\n\n" +
+                                 $"📝  Rationale:\n\n {activity.Rationale}\n\n\n" +
+                                 $"🎯 Objectives:\n\n {activity.Objectives}\n\n\n" +
+                                 $"📅 Date:\n\n {activity.Date}\n\n\n" +
+                                 $"🏢 Venue: \n\n {activity.Venue}\n\n\n" +
+                                 $"📊 Type of Activity:\n\n {activity.TypeOfActivity}\n\n\n" +
+                                 $"🌎 Reach:\n\n {activity.Reach}";
+
+            await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
+
+            // NOTIFICATION FOR  "CLUB"
+            await firebase.Child(("NotificationFor" + club) as string).PostAsync(activity.Title + " (" + activity.Club + ")  has been " + notifMessage);
+
+            bool isConfirmed = await DisplayAlert("Confirm Submission as DRAFT", message, "Confirm", "Cancel");
+            if (isConfirmed) {
+                await DisplayAlert("Success", "Activity has been " + notifMessage + " !", "OK");
+            }
+        } else {
+
         }
     }
 
-    //  --------------- OBJECTS ---------------
-    public class ActivityDetails {
-        public string Club { get; set; }
-        public string Status { get; set; }
-        public string Remarks { get; set; }
-        public string Title { get; set; }
-        public string Rationale { get; set; }
-        public string Objectives { get; set; }
-        public string TypeOfActivity { get; set; }
-        public string Date { get; set; }
-        public string Venue { get; set; }
-        public string Reach { get; set; }
-    }
+
+
+
+
 }
+    
