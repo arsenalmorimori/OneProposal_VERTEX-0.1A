@@ -11,6 +11,10 @@
     <Color x:Key="bgLight">#f9f9f9</Color>
     <Color x:Key="bgWhite">#f5f5f5</Color>
     <Color x:Key="bgBlue">#5b99ff</Color>
+    <Color x:Key="bgYellow">#f6e752</Color>
+    <Color x:Key="green">#41c372</Color>
+    <Color x:Key="red">#f06565</Color>
+    <Color x:Key="orange">#f28a4e</Color>
 
 
 

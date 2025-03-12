@@ -1,48 +1,28 @@
-﻿using System.Collections.ObjectModel;
 using Firebase.Database;
+using System.Collections.ObjectModel;
 
 namespace OneProposal_VERTEX_0._1A {
-    public partial class MainPage : ContentPage {
+    public partial class ADMIN_MainPage : ContentPage {
 
         private readonly FirebaseClient firebase = new FirebaseClient("https://oneproposal-onedev-default-rtdb.asia-southeast1.firebasedatabase.app/");
         public string club = "CoPs";
         public ObservableCollection<ProposalDetails> ActivityList { get; set; } = new ObservableCollection<ProposalDetails>();
-        public ObservableCollection<ProposalDetails> DraftList { get; set; } = new ObservableCollection<ProposalDetails>();
 
-
-        public MainPage() {
+        public ADMIN_MainPage() {
             InitializeComponent();
             BindingContext = this;
             LoadData();
-            LoadDataDraft();
         }
 
-        private async void IntentProposalPage(object sender, EventArgs e) {
-            await Navigation.PushAsync(new ProposalPage());
+        private async void IntentMainPage(object sender, EventArgs e) {
+            await Shell.Current.GoToAsync("..");
         }
-        private async void IntentAdminMainPage(object sender, EventArgs e) {
-            await Navigation.PushAsync(new ADMIN_MainPage());
-        }
-
         private async void LoadData() {
             var activities = await firebase.Child("ActivityProposal_tbl")
                                            .OnceAsync<ProposalDetails>();
-
             ActivityList.Clear();
-            //ONLY SUBMITTED
-            foreach (var item in activities.Where(a => a.Object.Status == "SUBMITTED")) {
+            foreach (var item in activities) {
                 ActivityList.Add(item.Object);
-            }
-        }
-
-        private async void LoadDataDraft() {
-            var activities = await firebase.Child("ActivityProposal_tbl")
-                                           .OnceAsync<ProposalDetails>();
-
-            DraftList.Clear();
-            //ONLY SUBMITTED
-            foreach (var item in activities.Where(a => a.Object.Status == "DRAFT")) {
-                DraftList.Add(item.Object);
             }
         }
 
@@ -63,8 +43,5 @@ namespace OneProposal_VERTEX_0._1A {
             public string Venue { get; set; }
             public string Reach { get; set; }
         }
-
     }
-
-
 }
