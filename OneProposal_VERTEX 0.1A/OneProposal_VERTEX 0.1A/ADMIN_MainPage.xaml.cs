@@ -5,8 +5,10 @@ namespace OneProposal_VERTEX_0._1A {
     public partial class ADMIN_MainPage : ContentPage {
 
         private readonly FirebaseClient firebase = new FirebaseClient("https://oneproposal-onedev-default-rtdb.asia-southeast1.firebasedatabase.app/");
-        public string club = "CoPs";
+        public string club = "ADMIN";
         public ObservableCollection<ProposalDetails> ActivityList { get; set; } = new ObservableCollection<ProposalDetails>();
+        
+
 
         public ADMIN_MainPage() {
             InitializeComponent();
@@ -33,15 +35,25 @@ namespace OneProposal_VERTEX_0._1A {
         }
 
         public class ProposalDetails {
+            public string Key { get; set; }
             public string Title { get; set; }
             public string Club { get; set; }
             public string Date { get; set; }
+            public string FiledDate { get; set; }
+
             public string Status { get; set; }
             public string Rationale { get; set; }
             public string Objectives { get; set; }
             public string TypeOfActivity { get; set; }
             public string Venue { get; set; }
             public string Reach { get; set; }
+
+            public string editorDate { get; set; }
+            public string editorRationale { get; set; }
+            public string editorObjectives { get; set; }
+            public string editorActivityType { get; set; }
+            public string editorVenue { get; set; }
+            public string editorReach { get; set; }
         }
     }
 }

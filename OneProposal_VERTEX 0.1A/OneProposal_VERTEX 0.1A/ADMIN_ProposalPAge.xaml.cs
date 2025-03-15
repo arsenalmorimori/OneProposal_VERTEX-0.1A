@@ -1,11 +1,15 @@
+using System.Diagnostics;
+
 namespace OneProposal_VERTEX_0._1A;
 
 public partial class ADMIN_ProposalPAge : ContentPage
 {
-	public ADMIN_ProposalPAge()
-	{
-		InitializeComponent();
-	}
+
+
+    public ADMIN_ProposalPAge() {
+        InitializeComponent();
+    }
+
 
     private async void BackIntent(object sender, EventArgs e) {
         await Shell.Current.GoToAsync("..");
@@ -46,5 +50,29 @@ public partial class ADMIN_ProposalPAge : ContentPage
             venueGrid.Add(new HorizontalStackLayout { Children = { checkBox, new Label { Text = venue } } }, index % 3, index / 3);
             index++;
         }
+    }
+
+
+
+    public class ProposalDetails {
+        public string Key { get; set; }
+        public string Title { get; set; }
+        public string Club { get; set; }
+        public string Date { get; set; }
+        public string FiledDate { get; set; }
+
+        public string Status { get; set; }
+        public string Rationale { get; set; }
+        public string Objectives { get; set; }
+        public string TypeOfActivity { get; set; }
+        public string Venue { get; set; }
+        public string Reach { get; set; }
+
+        public string editorDate { get; set; }
+        public string editorRationale { get; set; }
+        public string editorObjectives { get; set; }
+        public string editorActivityType { get; set; }
+        public string editorVenue { get; set; }
+        public string editorReach { get; set; }
     }
 }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OneProposal_VERTEX_0._1A.ADMIN_RevisedControls"
+             Title="ADMIN_RevisedControls"
+             Background="{StaticResource bgYellow}">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="190"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- NAV -->
+        <VerticalStackLayout Grid.Column="0" Padding="0,30,0,0">
+            <Button Text="Back" FontFamily="Poppins" WidthRequest="300" 
+                    BackgroundColor="{StaticResource bgYellow}" 
+                    Clicked="Button_Clicked_1"/>
+        </VerticalStackLayout>
+
+        <!-- CONTENT -->
+        <ScrollView Grid.Column="1"  >
+            <VerticalStackLayout  Padding="40,20,40,0" Spacing="10" Grid.Column="1" BackgroundColor="{StaticResource bgLight}" Margin="0,20,40,30">
+                
+                <Label Text="{Binding Title}" FontSize="40" Margin="0,70,0,90" FontAttributes="Bold" FontFamily="Poppins"/>
+                <Label Text="{Binding Club}" FontSize="30" Margin="0,-90,0,30" TextColor="Gray" FontFamily="Poppins"/>
+
+                <BoxView HeightRequest="1.5" Margin="0,15,0,5" BackgroundColor="LightGray"/>
+
+                <!-- Target Date -->
+                <HorizontalStackLayout Spacing="15">
+                    <Label Text="Target Date" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
+                    <CheckBox x:Name="chkDate"  CheckedChanged="OnCheckBoxChanged"/>
+                </HorizontalStackLayout>
+                <Label Text="{Binding Date, StringFormat='{0:dddd, MMM d, yyyy}'}" FontSize="16" FontFamily="Poppins"/>
+                <Editor x:Name="editorDate" BackgroundColor="White" Placeholder="Enter remarks..." IsVisible="False"/>
+
+                <!-- Rationale -->
+                <HorizontalStackLayout Spacing="15">
+                    <Label Text="Rationale" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
+                    <CheckBox x:Name="chkRationale" BackgroundColor="White" CheckedChanged="OnCheckBoxChanged"/>
+                </HorizontalStackLayout >
+                <Label Text="{Binding Rationale}" FontSize="16" FontFamily="Poppins"/>
+                <Editor x:Name="editorRationale" BackgroundColor="White" Placeholder="Enter remarks..." IsVisible="False"/>
+
+                <!-- Objectives -->
+                <HorizontalStackLayout Spacing="15">
+                    <Label Text="Objectives" FontSize="30" FontAttributes="Bold" Padding="0,20,0,0"/>
+                    <CheckBox x:Name="chkObjectives" CheckedChanged="OnCheckBoxChanged"/>
+                </HorizontalStackLayout>
+                <Label Text="{Binding Objectives}" FontSize="16" FontFamily="Poppins"/>
+                <Editor x:Name="editorObjectives" BackgroundColor="White" Placeholder="Enter remarks..." IsVisible="False"/>
+
+                <!-- Activity Type -->
+                <HorizontalStackLayout  Spacing="15">
+                    <Label Text="Activity Type" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
+                    <CheckBox x:Name="chkActivityType" CheckedChanged="OnCheckBoxChanged"/>
+                </HorizontalStackLayout >
+                <Label Text="{Binding TypeOfActivity}" FontSize="16" FontFamily="Poppins"/>
+                <Editor x:Name="editorActivityType" BackgroundColor="White" Placeholder="Enter remarks..." IsVisible="False"/>
+
+                <!-- Venue -->
+                <HorizontalStackLayout  Spacing="15">
+                    <Label Text="Venue" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
+                    <CheckBox x:Name="chkVenue" CheckedChanged="OnCheckBoxChanged"/>
+                </HorizontalStackLayout>
+                <Label Text="{Binding Venue}" FontSize="16" FontFamily="Poppins"/>
+                <Editor x:Name="editorVenue" BackgroundColor="White" Placeholder="Enter remarks..." IsVisible="False"/>
+
+                <!-- Reach -->
+                <HorizontalStackLayout Spacing="15">
+                    <Label Text="Reach" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
+                    <CheckBox x:Name="chkReach" CheckedChanged="OnCheckBoxChanged"/>
+                </HorizontalStackLayout>
+                <Label Text="{Binding Reach}" FontSize="16" FontFamily="Poppins"/>
+                <Editor x:Name="editorReach" Placeholder="Enter remarks..." IsVisible="False"/>
+
+                <Button Text="UPLOAD" FontFamily="Poppins" WidthRequest="300" 
+                     BackgroundColor="{StaticResource red}" 
+                     Margin="0,30,0,90" Clicked="revisedClicked"/>
+                
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

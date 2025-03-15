@@ -21,6 +21,7 @@
             <Button Text="Back" FontFamily="Poppins" WidthRequest="300" 
                     BackgroundColor="{StaticResource bgBlue}" 
                     Clicked="Button_Clicked_1"/>
+            
         </VerticalStackLayout>
 
         <ScrollView Grid.Column="1"  >
@@ -35,23 +36,34 @@
 
                 <Label Text="Target Date" FontSize="30" FontAttributes="Bold" FontFamily="Poppins"  Padding="0,20,0,0"/>
                 <Label Text="{Binding Date, StringFormat='{0:dddd, MMM d, yyyy}'}" FontSize="16" FontFamily="Poppins"/>
+                <Label Text="{Binding editorDate}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
                 
                 <Label Text="Rationale" FontSize="30" FontAttributes="Bold" FontFamily="Poppins"  Padding="0,20,0,0"/>
                 <Label Text="{Binding Rationale}" FontSize="16" FontFamily="Poppins"/>
+                <Label Text="{Binding editorRationale}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
+
 
                 <Label Text="Objectives" FontSize="30" FontAttributes="Bold" Padding="0,20,0,0" />
                 <Label Text="{Binding Objectives}" FontSize="16" FontFamily="Poppins"/>
+                <Label Text="{Binding editorObjectives}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
+
 
                 <Label Text="Activity Type" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
                 <Label Text="{Binding TypeOfActivity}" FontSize="16" FontFamily="Poppins"/>
+                <Label Text="{Binding editorActivityType}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
+
 
                 <Label Text="Venue" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
                 <Label Text="{Binding Venue}" FontSize="16" FontFamily="Poppins"/>
+                <Label Text="{Binding editorVenue}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
+
 
                 <Label Text="Reach" FontSize="30" FontAttributes="Bold" FontFamily="Poppins" Padding="0,20,0,0"/>
-                <Label Text="{Binding Reach}" FontSize="16" Margin="0,0,0,50"/>
+                <Label Text="{Binding Reach}" FontSize="16" />
+                <Label Text="{Binding editorReach}" FontSize="16" Margin="0,0,0,50" TextColor="{StaticResource red}" FontFamily="Poppins"/>
 
-        </VerticalStackLayout>
+
+            </VerticalStackLayout>
     </ScrollView>
 
         <!-- STATUS / RIGHT PAGE -->
@@ -79,9 +91,13 @@
                 <Label Text="{Binding Date, StringFormat='{0:dddd, MMM d, yyyy}'}"  FontFamily="Poppins" FontSize="15"/>
             </HorizontalStackLayout>
 
-            <Button Text="ACCEPT" BackgroundColor="{StaticResource green}" FontAttributes="Bold" Margin="0,30,0,0"/>
-            <Button Text="REJECT" BackgroundColor="{StaticResource red}" FontAttributes="Bold"/>
-            <Button Text="REVISE" BackgroundColor="{StaticResource orange}" FontAttributes="Bold"/>
+            <VerticalStackLayout Spacing="10" x:Name="ButtonStatusUpdate" IsVisible="false">
+                <Button Text="ACCEPT" BackgroundColor="{StaticResource green}" FontAttributes="Bold" Margin="0,30,0,0"/>
+                <Button Text="REJECT" BackgroundColor="{StaticResource red}" FontAttributes="Bold"/>
+                <Button Text="REVISE" BackgroundColor="{StaticResource orange}" Clicked="AdminReviseButton" FontAttributes="Bold"/>
+            </VerticalStackLayout>
+            <Button Text="REVISE" x:Name="ButtonRevised" Margin="0,30,0,0" BackgroundColor="{StaticResource orange}" IsVisible="false" Clicked="AdminReviseButtonMember" FontAttributes="Bold"/>
+
 
         </VerticalStackLayout>
 

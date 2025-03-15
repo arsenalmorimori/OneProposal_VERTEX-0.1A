@@ -56,6 +56,8 @@
 
                 <VerticalStackLayout>
                     <Label Text="Venue" FontSize="20" FontFamily="Poppins" Margin="0,10,0,0"/>
+                    <Label Text="asa"  FontSize="15" FontFamily="Poppins" Margin="0,5,0,0"/>
+                    <Label Text="Ignore this if there's no Changes needed" FontSize="15" FontFamily="Poppins" Margin="0,5,0,0"/>
                     <Grid x:Name="venueGrid" ColumnDefinitions="*,*,*"/>
                     <Entry x:Name="entryOtherVenue" Placeholder="Specify other venue" BackgroundColor="White" IsVisible="False"/>
                 </VerticalStackLayout>
@@ -66,7 +68,7 @@
                     <RadioButton x:Name="rb2_02" Content="Within the SHS Club" GroupName="reach"/>
                     <RadioButton x:Name="rb2_03" Content="Within subject/class" GroupName="reach"/>
                     <RadioButton x:Name="rb2_04" Content="Other" GroupName="reach" CheckedChanged="OnOtherCheckedChanged2"/>
-                    <Entry x:Name="entryRB2" Placeholder="Specify other reach activity" IsVisible="False" BackgroundColor="White"/>
+                    <Entry x:Name="entryRB2"  Placeholder="Specify other reach activity" IsVisible="False" BackgroundColor="White"/>
                 </VerticalStackLayout>
 
                 <Button Text="DONE" FontFamily="Poppins" WidthRequest="300" 

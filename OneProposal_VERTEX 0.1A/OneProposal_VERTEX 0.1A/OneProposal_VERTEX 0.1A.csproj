@@ -76,6 +76,9 @@
 	  <MauiXaml Update="ADMIN_ProposalPAge.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ADMIN_RevisedControls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ProposalPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

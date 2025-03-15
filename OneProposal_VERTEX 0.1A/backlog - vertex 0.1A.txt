@@ -1,0 +1,9 @@
+ [/]  ADMIN_RevisePage
+	- FUNC Checkbox 
+	- /FUNC Upload button 
+		- TODO : get the value of firebase Key in order to update
+			// add firebase key in object that is inserted
+
+
+
+[ ]   passing info in ADMIN_ProposalPAge

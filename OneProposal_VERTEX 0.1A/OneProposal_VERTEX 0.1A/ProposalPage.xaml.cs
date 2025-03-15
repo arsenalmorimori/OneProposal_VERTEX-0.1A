@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using Firebase.Database;
+using Firebase.Database.Query;
 using Microsoft.Maui.Storage;
 using static OneProposal_VERTEX_0._1A.ProposalPage;
 
@@ -63,6 +64,7 @@ public partial class ProposalPage : ContentPage {
 
     //  --------------- OBJECTS ---------------
     public class ActivityDetails {
+        public string Key { get; set; }
         public string Club { get; set; }
         public string Status { get; set; }
         public string Remarks { get; set; }
@@ -73,6 +75,16 @@ public partial class ProposalPage : ContentPage {
         public string Date { get; set; }
         public string Venue { get; set; }
         public string Reach { get; set; }
+        public string FiledDate { get; set; }
+
+        public string editorDate { get; set; }
+        public string editorRationale { get; set; }
+        public string editorObjectives { get; set; }
+        public string editorActivityType { get; set; }
+        public string editorVenue { get; set; }
+        public string editorReach { get; set; }
+
+
     }
 
 
@@ -101,6 +113,7 @@ public partial class ProposalPage : ContentPage {
 
         // Create object with form data
         var activity = new ActivityDetails {
+            Key = "",
             Club = club,
             Status = save,
             Remarks = null,
@@ -110,7 +123,14 @@ public partial class ProposalPage : ContentPage {
             TypeOfActivity = activityType,
             Date = datePicker.Date.ToString("MMMM dd, yyyy"),
             Venue = selectedVenue,
-            Reach = reachType
+            Reach = reachType,
+            FiledDate = DateTime.Now.ToString("MMMM dd, yyyy"),
+            editorDate = null,
+            editorRationale = null,
+            editorObjectives = null,
+            editorActivityType = null,
+            editorVenue = null,
+            editorReach = null
         };
 
 
@@ -139,7 +159,13 @@ public partial class ProposalPage : ContentPage {
                     await DisplayAlert("Success", "Activity has been " + notifMessage + " !", "OK");
                 }
 
-                await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
+                var Insert = await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
+                activity.Key = Insert.Key;
+                await firebase.Child("ActivityProposal_tbl").Child(Insert.Key).PatchAsync(activity);
+                DisplayAlert("asa", Insert.Key, "fgh");
+
+                await Shell.Current.GoToAsync("..");
+
 
                 // NOTIFICATION FOR  "CLUB"
                 await firebase.Child(("NotificationFor" + club) as string).PostAsync(activity.Title + " (" + activity.Club + ")  has been " + notifMessage);
@@ -160,15 +186,14 @@ public partial class ProposalPage : ContentPage {
                                  $"📊 Type of Activity:\n\n {activity.TypeOfActivity}\n\n\n" +
                                  $"🌎 Reach:\n\n {activity.Reach}";
 
-            await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
-
-            // NOTIFICATION FOR  "CLUB"
-            await firebase.Child(("NotificationFor" + club) as string).PostAsync(activity.Title + " (" + activity.Club + ")  has been " + notifMessage);
 
             bool isConfirmed = await DisplayAlert("Confirm Submission as DRAFT", message, "Confirm", "Cancel");
             if (isConfirmed) {
                 await DisplayAlert("Success", "Activity has been " + notifMessage + " !", "OK");
             }
+            await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
+            await Shell.Current.GoToAsync("..");
+            
         } else {
 
         }

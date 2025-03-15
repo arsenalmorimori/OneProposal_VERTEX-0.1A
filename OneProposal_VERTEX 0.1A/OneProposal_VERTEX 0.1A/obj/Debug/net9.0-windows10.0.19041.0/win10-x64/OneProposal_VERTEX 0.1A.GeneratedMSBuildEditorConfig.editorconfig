@@ -8,7 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OneProposal_VERTEX_0._1A
-build_property.ProjectDir = C:\Users\Nesty\Programming\07 MobApp2\OneProposal_VERTEX-0.1A\OneProposal_VERTEX 0.1A\OneProposal_VERTEX 0.1A\
+build_property.ProjectDir = C:\Users\Nesty\Programming\MobApp2\OneProposal_VERTEX-0.1A\OneProposal_VERTEX 0.1A\OneProposal_VERTEX 0.1A\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -22,55 +22,61 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ActivityDetailPage.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ActivityDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.ActivityDetailPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ActivityDetailPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ActivityDetailPage.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ADMIN_MainPage.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ADMIN_MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.ADMIN_MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ADMIN_MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ADMIN_MainPage.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ADMIN_ProposalPAge.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ADMIN_ProposalPAge.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.ADMIN_ProposalPAge.xaml
 build_metadata.AdditionalFiles.TargetPath = ADMIN_ProposalPAge.xaml
 build_metadata.AdditionalFiles.RelativePath = ADMIN_ProposalPAge.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/App.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ADMIN_RevisedControls.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.ADMIN_RevisedControls.xaml
+build_metadata.AdditionalFiles.TargetPath = ADMIN_RevisedControls.xaml
+build_metadata.AdditionalFiles.RelativePath = ADMIN_RevisedControls.xaml
+
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/AppShell.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/MainPage.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ProposalPage.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/ProposalPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.ProposalPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ProposalPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ProposalPage.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/Resources/Styles/Colors.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Nesty/Programming/07 MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/Resources/Styles/Styles.xaml]
+[C:/Users/Nesty/Programming/MobApp2/OneProposal_VERTEX-0.1A/OneProposal_VERTEX 0.1A/OneProposal_VERTEX 0.1A/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OneProposal_VERTEX_0._1A.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

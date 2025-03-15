@@ -80,7 +80,7 @@
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
                                         <VerticalStackLayout>
-                                        <Frame Padding="10" CornerRadius="20" BackgroundColor="{StaticResource White}" >
+                                        <Frame Padding="10" CornerRadius="20" BackgroundColor="{StaticResource White}" BorderColor="Transparent" >
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer CommandParameter="{Binding}" Tapped="OnActivityTapped"/>
                                             </Frame.GestureRecognizers>
@@ -96,8 +96,7 @@
                                                 </Grid.ColumnDefinitions>
 
                                                 <Label Text="{Binding Title}" Grid.Column="1" FontSize="20" FontAttributes="Bold"/>
-                                                <Label Text="{Binding Club}" Grid.Column="1" HorizontalOptions="End" FontSize="20" TextColor="DarkGray"/>
-                                                <Label Text="{Binding Date}" Grid.Column="1" Grid.Row="1" FontSize="14" TextColor="DarkGray" HorizontalOptions="End"/>
+                                                <Label Text="{Binding FiledDate}" Grid.Column="1" Grid.Row="1" FontSize="14" TextColor="DarkGray" HorizontalOptions="End"/>
                                                 <Label Text="{Binding Status}" Grid.Column="1" Grid.Row="1" FontSize="14" TextColor="{StaticResource green}" HorizontalOptions="Start"/>
                                             </Grid>
                                         </Frame>
