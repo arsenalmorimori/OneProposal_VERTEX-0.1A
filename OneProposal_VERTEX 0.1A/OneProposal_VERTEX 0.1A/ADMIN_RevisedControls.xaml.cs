@@ -10,10 +10,11 @@ public partial class ADMIN_RevisedControls : ContentPage {
 
     private readonly FirebaseClient firebase = new FirebaseClient("https://oneproposal-onedev-default-rtdb.asia-southeast1.firebasedatabase.app/");
     public string club = "CoPs";
+    
+    private ADMIN_MainPage.ProposalDetails receivedActivity;
 
-    private ActivityDetailPage.ProposalDetails receivedActivity;
 
-    public ADMIN_RevisedControls(ActivityDetailPage.ProposalDetails activity) {
+    public ADMIN_RevisedControls(ADMIN_MainPage.ProposalDetails activity) {
         InitializeComponent();
         receivedActivity = activity; // Store received data
         BindingContext = receivedActivity; // Bind to UI if needed

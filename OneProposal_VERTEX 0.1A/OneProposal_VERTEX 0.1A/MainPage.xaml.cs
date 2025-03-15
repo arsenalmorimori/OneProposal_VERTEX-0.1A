@@ -66,6 +66,7 @@ namespace OneProposal_VERTEX_0._1A {
         }
 
         public class ProposalDetails {
+            public string Key { get; set; }
             public string Title { get; set; }
             public string Club { get; set; }
             public string Date { get; set; }

@@ -96,7 +96,7 @@ public partial class ProposalPage : ContentPage {
 
         // Get selected reach type
         string reachType = rb2_01.IsChecked ? "School-wide" :
-                           rb2_02.IsChecked ? "Within SHS Club" :
+                           rb2_02.IsChecked ? "Within the SHS Club" :
                            rb2_03.IsChecked ? "Within subject/class" :
                            rb2_04.IsChecked ? entryRB2.Text : "N/A";
 
@@ -162,9 +162,6 @@ public partial class ProposalPage : ContentPage {
                 var Insert = await firebase.Child("ActivityProposal_tbl").PostAsync(activity);
                 activity.Key = Insert.Key;
                 await firebase.Child("ActivityProposal_tbl").Child(Insert.Key).PatchAsync(activity);
-                DisplayAlert("asa", Insert.Key, "fgh");
-
-                await Shell.Current.GoToAsync("..");
 
 
                 // NOTIFICATION FOR  "CLUB"
@@ -172,6 +169,9 @@ public partial class ProposalPage : ContentPage {
 
                 // NOTIFICATION FOR  "ADMIN"
                 await firebase.Child(("NotificationForAdmin") as string).PostAsync(activity.Title + " (" + activity.Club + ")  has been " + notifMessage);
+
+
+                await Shell.Current.GoToAsync("..");
 
                
             }

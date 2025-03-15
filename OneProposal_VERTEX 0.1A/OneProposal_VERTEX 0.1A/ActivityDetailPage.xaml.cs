@@ -37,22 +37,19 @@ public partial class ActivityDetailPage : ContentPage {
 
 
     private async void AdminReviseButton(object sender, EventArgs e) {
-        // Ensure BindingContext contains the selected proposal details
-        if (BindingContext is ProposalDetails selectedActivity) {
-            await DisplayAlert("Debug", "Admin revise clicked for: " + selectedActivity.Title, "OK");
-
-            // Navigate & pass data
+        if (BindingContext is ADMIN_MainPage.ProposalDetails selectedActivity) {
             await Navigation.PushAsync(new ADMIN_RevisedControls(selectedActivity));
-        } else {
-            await DisplayAlert("Error", "No activity details found!", "OK");
         }
+    
     }
 
 
 
 
     private async void AdminReviseButtonMember(object sender, EventArgs e) {
-        DisplayAlert("Developong", "Member revised button clicked", "DONE");
+        if (BindingContext is MainPage.ProposalDetails selectedActivity) {
+            await Navigation.PushAsync(new ADMIN_ProposalPAge(selectedActivity));
+        }
     }
 
     public class ProposalDetails {

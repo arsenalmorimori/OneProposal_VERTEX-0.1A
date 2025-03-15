@@ -31,13 +31,13 @@
                 <Label Text="CoPs" FontSize="30" FontFamily="Poppins"/>
 
                 <Label Text="Title" FontSize="20" FontFamily="Poppins"/>
-                <Entry x:Name="et01_title" Placeholder="Title Of Activity" BackgroundColor="White"/>
+                <Entry x:Name="et01_title" Text="{Binding Title}" Placeholder="Title Of Activity" BackgroundColor="White"/>
 
                 <Label Text="Rational of Activity" FontSize="20" FontFamily="Poppins" Margin="0,20,0,0"/>
-                <Editor x:Name="et02_rational" HeightRequest="220" Placeholder="Rational of Activity" BackgroundColor="White"/>
+                <Editor x:Name="et02_rational" Text="{Binding Rationale}" HeightRequest="220" Placeholder="Rational of Activity" BackgroundColor="White"/>
 
                 <Label Text="Objectives" FontSize="20" FontFamily="Poppins" Margin="0,20,0,0"/>
-                <Editor x:Name="et03_objective" HeightRequest="220" Placeholder="Objective Of Activity" BackgroundColor="White"/>
+                <Editor x:Name="et03_objective" Text="{Binding Objectives}" HeightRequest="220" Placeholder="Objective Of Activity" BackgroundColor="White"/>
 
                 <Label Text="Type of Activity" FontSize="20" FontFamily="Poppins" Margin="0,30,0,0"/>
                 <VerticalStackLayout>
@@ -46,34 +46,34 @@
                         <RadioButton x:Name="rbMajor" Content="Major" GroupName="activityType"/>
                         <RadioButton x:Name="rbOther" Content="Other" GroupName="activityType" CheckedChanged="OnOtherCheckedChanged"/>
                     </HorizontalStackLayout>
-                    <Entry x:Name="entryOther" Placeholder="Specify other activity" IsVisible="False" BackgroundColor="White"/>
+                    <Entry x:Name="entryOther" Text="{Binding TypeOfActivity}" Placeholder="Specify other activity" IsVisible="False" BackgroundColor="White"/>
                 </VerticalStackLayout>
 
-                <HorizontalStackLayout>
-                    <Label Text="Date" FontSize="20" FontFamily="Poppins" Margin="0,10,0,0"/>
-                    <DatePicker x:Name="datePicker" Format="MMMM dd, yyyy" Margin="0,5,0,0"/>
+                <HorizontalStackLayout Margin="0,40,0,30">
+                    <Label Text="Date" FontSize="20" FontFamily="Poppins" />
+                    <DatePicker x:Name="datePicker" Format="MMMM dd, yyyy"/>
                 </HorizontalStackLayout>
 
                 <VerticalStackLayout>
                     <Label Text="Venue" FontSize="20" FontFamily="Poppins" Margin="0,10,0,0"/>
-                    <Label Text="asa"  FontSize="15" FontFamily="Poppins" Margin="0,5,0,0"/>
-                    <Label Text="Ignore this if there's no Changes needed" FontSize="15" FontFamily="Poppins" Margin="0,5,0,0"/>
+                    <Label Text="{Binding Venue, StringFormat='Selected Option  :   {0}'}"  TextColor="{StaticResource red}" FontSize="20" FontFamily="Poppins" Margin="0,10,0,0"/>
+                    <Label Text="(Ignore this if there's no Changes needed)" TextColor="{StaticResource red}" FontSize="15" FontFamily="Poppins" Margin="0, 5,0,20"/>
                     <Grid x:Name="venueGrid" ColumnDefinitions="*,*,*"/>
                     <Entry x:Name="entryOtherVenue" Placeholder="Specify other venue" BackgroundColor="White" IsVisible="False"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout>
-                    <Label Text="Type of Activity" FontSize="20" FontFamily="Poppins" Margin="0,30,0,0"/>
-                    <RadioButton x:Name="rb2_01" Content="School-wide" GroupName="reach"/>
+                    <Label Text="Type of Activity" FontSize="20" FontFamily="Poppins" Margin="0,30,0,10"/>
+                    <RadioButton x:Name="rb2_01" Content="School-wide" GroupName="reach" />
                     <RadioButton x:Name="rb2_02" Content="Within the SHS Club" GroupName="reach"/>
                     <RadioButton x:Name="rb2_03" Content="Within subject/class" GroupName="reach"/>
                     <RadioButton x:Name="rb2_04" Content="Other" GroupName="reach" CheckedChanged="OnOtherCheckedChanged2"/>
-                    <Entry x:Name="entryRB2"  Placeholder="Specify other reach activity" IsVisible="False" BackgroundColor="White"/>
+                    <Entry x:Name="entryRB2" Text="{Binding Reach}" Placeholder="Specify other reach activity" IsVisible="False" BackgroundColor="White"/>
                 </VerticalStackLayout>
 
                 <Button Text="DONE" FontFamily="Poppins" WidthRequest="300" 
                         BackgroundColor="{StaticResource bgBlue}" 
-                        Margin="0,30,0,0"/>
+                        Margin="0,30,0,0" Clicked="Button_Clicked"/>
 
 
             </VerticalStackLayout>
