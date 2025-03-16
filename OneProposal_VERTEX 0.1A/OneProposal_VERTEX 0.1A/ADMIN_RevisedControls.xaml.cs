@@ -10,6 +10,7 @@ public partial class ADMIN_RevisedControls : ContentPage {
 
     private readonly FirebaseClient firebase = new FirebaseClient("https://oneproposal-onedev-default-rtdb.asia-southeast1.firebasedatabase.app/");
     public string club = "CoPs";
+    public string title = "";
     
     private ADMIN_MainPage.ProposalDetails receivedActivity;
 
@@ -17,6 +18,8 @@ public partial class ADMIN_RevisedControls : ContentPage {
     public ADMIN_RevisedControls(ADMIN_MainPage.ProposalDetails activity) {
         InitializeComponent();
         receivedActivity = activity; // Store received data
+        title = activity.Title;
+        club = "CoPs";
         BindingContext = receivedActivity; // Bind to UI if needed
     }
 
@@ -66,16 +69,16 @@ public partial class ADMIN_RevisedControls : ContentPage {
             
             await firebase.Child("ActivityProposal_tbl")
               .Child(receivedActivity.Key)
-              .PatchAsync(new {Status = "REVISED"});
+              .PatchAsync(new {Status = "REVISION"});
 
             await Shell.Current.GoToAsync("..");
 
 
             // NOTIFICATION FOR  "CLUB"
-            await firebase.Child(("NotificationFor" + club) as string).PostAsync("ADMIN NOTE  :  "+receivedActivity.Title + " (" + receivedActivity.Club + ")  has been " + notifMessage);
+            await firebase.Child(("NotificationFor" + club)).PostAsync("ADMIN NOTE  :  "+ title + " (" + club + ")  has been " + notifMessage);
 
             // NOTIFICATION FOR  "ADMIN"
-            await firebase.Child(("NotificationForAdmin") as string).PostAsync(receivedActivity.Title + " (" + receivedActivity.Club + ")  has been " + notifMessage);
+            await firebase.Child(("NotificationForAdmin") as string).PostAsync(title + " (" + club + ")  has been " + notifMessage);
             await DisplayAlert("Success", "Activity has been " + notifMessage + " !", "OK");
         }
 

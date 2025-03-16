@@ -13,11 +13,14 @@ public partial class ADMIN_ProposalPAge : ContentPage
     private readonly FirebaseClient firebase = new FirebaseClient("https://oneproposal-onedev-default-rtdb.asia-southeast1.firebasedatabase.app/");
     public string club = "CoPs";
     public string kkey = "";
+    public string venn = "";
 
     public ADMIN_ProposalPAge(MainPage.ProposalDetails selectedActivity) {
         InitializeComponent();
         BindingContext = selectedActivity;
 
+        kkey = selectedActivity.Key;
+        venn = selectedActivity.Venue;
         if (selectedActivity.TypeOfActivity == "Minor")
             rbMinor.IsChecked = true;
         else if (selectedActivity.TypeOfActivity == "Major")
@@ -127,7 +130,7 @@ public partial class ADMIN_ProposalPAge : ContentPage
 
 
     private async void saveToFirebase(string save, string notifMessage) {
-     
+
 
         // Get selected type of activity
         string activityType = rbMinor.IsChecked ? "Minor" :
@@ -149,29 +152,38 @@ public partial class ADMIN_ProposalPAge : ContentPage
         }
         selectedVenue = selectedVenue.TrimEnd(',', ' ');  // Remove trailing comma
 
-        if (!string.IsNullOrWhiteSpace(entryOtherVenue.Text))
-            selectedVenue += $" (Other: {entryOtherVenue.Text})";
+        if (rbOther.IsChecked) selectedVenue += $" (Other: {entryOtherVenue.Text})";
+
+
 
         // Check if required fields are filled
         if (string.IsNullOrWhiteSpace(et01_title.Text) ||
             string.IsNullOrWhiteSpace(et02_rational.Text) ||
             string.IsNullOrWhiteSpace(et03_objective.Text) ||
-            string.IsNullOrWhiteSpace(selectedVenue) ||
             string.IsNullOrWhiteSpace(activityType) ||
             string.IsNullOrWhiteSpace(reachType)) {
             await DisplayAlert("Please Fill all Requirements", "Please check again your Activity Proposal Form", "OK");
             return;
         }
 
+        string printVenue = "";
+        if (string.IsNullOrWhiteSpace(selectedVenue)) {
+            printVenue = venn;
+        } else {
+            printVenue = selectedVenue;
+
+        }
+
 
         // Display confirmation message
-        string message = $"🎭 Club: \n\n {club}\n\n\n" +
+        string message = $"🎭 Club: \n\n {kkey}\n\n\n" +
+        $"🎭 Club: \n\n {club}\n\n\n" +
                          $"🚀 Status: \n\n {"REVISION"}\n\n\n" +
                          $"📌 Title: \n\n {et01_title.Text}\n\n\n\n" +
                          $"📝  Rationale:\n\n {et02_rational.Text}\n\n\n" +
                          $"🎯 Objectives:\n\n {et03_objective.Text}\n\n\n" +
-                         $"📅 Date:\n\n {datePicker.ToString}\n\n\n" +
-                         $"🏢 Venue: \n\n {datePicker.Date.ToString("MMMM dd, yyyy")}\n\n\n" +
+                         $"📅 Target Date:\n\n {datePicker.Date.ToString("MMMM dd, yyyy")}\n\n\n" +
+                         $"🏢 Venue: \n\n {printVenue}\n\n\n" +
                          $"📊 Type of Activity:\n\n {activityType}\n\n\n" +
                          $"🌎 Reach:\n\n {reachType}";
 
@@ -184,33 +196,36 @@ public partial class ADMIN_ProposalPAge : ContentPage
 
         // Update selected activity object
         var aSelectedActivity = new ProposalDetails {
+            Key = kkey,
             Title = et01_title.Text,
             Status = "REVISION",
             Rationale = et02_rational.Text,
             Objectives = et03_objective.Text,
-            Venue = selectedVenue,
+            Venue = printVenue,
             TypeOfActivity = activityType,
             Reach = reachType,
             Date = datePicker.Date.ToString("MMMM dd, yyyy"), // Format date
-            editorDate = null,
-            editorRationale = null,
-            editorObjectives = null,
-            editorActivityType = null,
-            editorVenue = null,
-            editorReach = null
+            FiledDate = DateTime.Now.ToString("MMMM dd, yyyy"),
+            editorDate = "",
+            editorRationale = "",
+            editorObjectives = "",
+            editorActivityType = "",
+            editorVenue = "",
+            editorReach =  ""
+
         };
 
 
         // Update the activity in Firebase using its Key
         await firebase.Child("ActivityProposal_tbl")
                         .Child(kkey)
-                        .PatchAsync(aSelectedActivity);
+                        .PutAsync(aSelectedActivity);
 
 
 
         //// Send Notifications
-        //await firebase.Child("NotificationFor" + selectedActivity.Club).PostAsync(et01_title.Text + " (" + selectedActivity.Club + ") has been Revised.");
-        //await firebase.Child("NotificationForAdmin").PostAsync(selectedActivity.Title + " (" + selectedActivity.Club + ") has been Revised.");
+        await firebase.Child("NotificationFor" + club).PostAsync(et01_title.Text + " (" + club + ") has been Revised.");
+        await firebase.Child("NotificationForAdmin").PostAsync(aSelectedActivity.Title + " (" + aSelectedActivity.Club + ") has been Revised.");
 
         // Navigate back
         await Shell.Current.GoToAsync("..");

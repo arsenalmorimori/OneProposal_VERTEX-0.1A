@@ -34,12 +34,15 @@
                 <Entry x:Name="et01_title" Text="{Binding Title}" Placeholder="Title Of Activity" BackgroundColor="White"/>
 
                 <Label Text="Rational of Activity" FontSize="20" FontFamily="Poppins" Margin="0,20,0,0"/>
+                <Label Text="{Binding editorRationale}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
                 <Editor x:Name="et02_rational" Text="{Binding Rationale}" HeightRequest="220" Placeholder="Rational of Activity" BackgroundColor="White"/>
 
                 <Label Text="Objectives" FontSize="20" FontFamily="Poppins" Margin="0,20,0,0"/>
+                <Label Text="{Binding editorObjectives}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
                 <Editor x:Name="et03_objective" Text="{Binding Objectives}" HeightRequest="220" Placeholder="Objective Of Activity" BackgroundColor="White"/>
 
                 <Label Text="Type of Activity" FontSize="20" FontFamily="Poppins" Margin="0,30,0,0"/>
+                <Label Text="{Binding editorActivityType}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
                 <VerticalStackLayout>
                     <HorizontalStackLayout>
                         <RadioButton x:Name="rbMinor" Content="Minor" GroupName="activityType"/>
@@ -52,18 +55,22 @@
                 <HorizontalStackLayout Margin="0,40,0,30">
                     <Label Text="Date" FontSize="20" FontFamily="Poppins" />
                     <DatePicker x:Name="datePicker" Format="MMMM dd, yyyy"/>
+                    <Label Text="{Binding editorDate}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
+
                 </HorizontalStackLayout>
 
                 <VerticalStackLayout>
                     <Label Text="Venue" FontSize="20" FontFamily="Poppins" Margin="0,10,0,0"/>
-                    <Label Text="{Binding Venue, StringFormat='Selected Option  :   {0}'}"  TextColor="{StaticResource red}" FontSize="20" FontFamily="Poppins" Margin="0,10,0,0"/>
-                    <Label Text="(Ignore this if there's no Changes needed)" TextColor="{StaticResource red}" FontSize="15" FontFamily="Poppins" Margin="0, 5,0,20"/>
+                    <Label Text="{Binding editorVenue}" FontSize="16" TextColor="{StaticResource red}" FontFamily="Poppins"/>
+                    <Label Text="{Binding Venue, StringFormat='Selected Option  :   {0}'}"  TextColor="{StaticResource orange}" FontSize="20" FontFamily="Poppins" Margin="0,10,0,0"/>
+                    <Label Text="(Ignore this if there's no Changes needed)" TextColor="{StaticResource orange}" FontSize="15" FontFamily="Poppins" Margin="0, 5,0,20"/>
                     <Grid x:Name="venueGrid" ColumnDefinitions="*,*,*"/>
                     <Entry x:Name="entryOtherVenue" Placeholder="Specify other venue" BackgroundColor="White" IsVisible="False"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout>
                     <Label Text="Type of Activity" FontSize="20" FontFamily="Poppins" Margin="0,30,0,10"/>
+                    <Label Text="{Binding editorReach}" FontSize="16" Margin="0,0,0,30" TextColor="{StaticResource red}" FontFamily="Poppins"/>
                     <RadioButton x:Name="rb2_01" Content="School-wide" GroupName="reach" />
                     <RadioButton x:Name="rb2_02" Content="Within the SHS Club" GroupName="reach"/>
                     <RadioButton x:Name="rb2_03" Content="Within subject/class" GroupName="reach"/>
@@ -72,8 +79,8 @@
                 </VerticalStackLayout>
 
                 <Button Text="DONE" FontFamily="Poppins" WidthRequest="300" 
-                        BackgroundColor="{StaticResource bgBlue}" 
-                        Margin="0,30,0,0" Clicked="Button_Clicked"/>
+                        BackgroundColor="{StaticResource green}" 
+                        Margin="0,30,0,50" Clicked="Button_Clicked"/>
 
 
             </VerticalStackLayout>

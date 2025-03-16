@@ -22,6 +22,8 @@
             <!-- CONTENT -->
         <ScrollView Grid.Column="1">
 
+
+
             <VerticalStackLayout  Padding="40,20,40,0" Margin="20" BackgroundColor="{StaticResource bgLight}">
                 <Grid >
                     <Grid.RowDefinitions>
@@ -71,35 +73,68 @@
                     </VerticalStackLayout>
 
                     <!--  CONTENT  :  RIGHT  -->
+                    
+
                     <ScrollView Grid.Column="1">
                         <VerticalStackLayout Padding="20,20,0,20" Margin="20,0,0,0">
 
                             <Label Text="PROPOSALS" Margin="0,0,0,20" FontSize="30" FontFamily="Poppins" HorizontalOptions="Center"/>
 
+                            <HorizontalStackLayout Spacing="5" >
+                                <Button FontFamily="Poppins" x:Name="btn_all" BackgroundColor="{StaticResource bgBlue}" TextColor="{StaticResource White}" Clicked="sortAll" Text="All"/>
+                                <Button FontFamily="Poppins" x:Name="btn_sub"  BackgroundColor="{StaticResource Gray100}" TextColor="{StaticResource Black}"  Clicked="sortSubmitted" Text="Submitted"/>
+                                <Button FontFamily="Poppins"  x:Name="btn_rev"  BackgroundColor="{StaticResource Gray100}" TextColor="{StaticResource Black}"  Clicked="sortRevision" Text="Revisions"/>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Spacing="5" Margin="0,10,0,20">
+                                <Button FontFamily="Poppins"  x:Name="btn_rej" BackgroundColor="{StaticResource Gray100}"   TextColor="{StaticResource Black}"  Clicked="sortRejected" Text="Rejected"/>
+                                <Button FontFamily="Poppins"  x:Name="btn_acc" BackgroundColor="{StaticResource Gray100}"   TextColor="{StaticResource Black}"  Clicked="sortAccepted" Text="Accepted"/>
+                                <Button FontFamily="Poppins"  x:Name="btn_notif" BackgroundColor="{StaticResource Gray100}"   TextColor="{StaticResource Black}"  Clicked="sortnotif" Text="Notification"/>
+                            </HorizontalStackLayout>
+
                             <CollectionView ItemsSource="{Binding ActivityList}" SelectionMode="Single">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
                                         <VerticalStackLayout>
-                                        <Frame Padding="10" CornerRadius="20" BackgroundColor="{StaticResource White}" BorderColor="Transparent" >
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer CommandParameter="{Binding}" Tapped="OnActivityTapped"/>
-                                            </Frame.GestureRecognizers>
+                                            <Frame Padding="10" CornerRadius="20" BackgroundColor="{StaticResource White}" BorderColor="Transparent" >
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer CommandParameter="{Binding}" Tapped="OnActivityTapped"/>
+                                                </Frame.GestureRecognizers>
 
-                                            <Grid>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="Auto"/>
-                                                    <RowDefinition Height="Auto"/>
-                                                </Grid.RowDefinitions>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="50"/>
-                                                    <ColumnDefinition Width="1*"/>
-                                                </Grid.ColumnDefinitions>
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="50"/>
+                                                        <ColumnDefinition Width="1*"/>
+                                                    </Grid.ColumnDefinitions>
 
-                                                <Label Text="{Binding Title}" Grid.Column="1" FontSize="20" FontAttributes="Bold"/>
-                                                <Label Text="{Binding FiledDate}" Grid.Column="1" Grid.Row="1" FontSize="14" TextColor="DarkGray" HorizontalOptions="End"/>
-                                                <Label Text="{Binding Status}" Grid.Column="1" Grid.Row="1" FontSize="14" TextColor="{StaticResource green}" HorizontalOptions="Start"/>
-                                            </Grid>
-                                        </Frame>
+                                                    <Label Text="{Binding Title}" Grid.Column="1" FontSize="20" FontAttributes="Bold"/>
+                                                    <Label Text="{Binding FiledDate}" Grid.Column="1" Grid.Row="1" FontSize="14" TextColor="DarkGray" HorizontalOptions="End"/>
+                                                    <Label Text="{Binding Status}" Grid.Column="1" Grid.Row="1" FontSize="14" TextColor="{StaticResource green}" HorizontalOptions="Start"/>
+                                                </Grid>
+                                            </Frame>
+                                            <BoxView HeightRequest="1.5" Margin="4" BackgroundColor="Transparent"   />
+
+                                        </VerticalStackLayout>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+
+
+
+                        <VerticalStackLayout Padding="20,20,0,20" Margin="20,0,0,0">
+                            <CollectionView ItemsSource="{Binding NotifList}" SelectionMode="Single">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <VerticalStackLayout>
+
+
+                                            <Label Text="{Binding Message}"  FontSize="15" Margin="0,10,0,0"/>
+
                                             <BoxView HeightRequest="1.5" Margin="4" BackgroundColor="Transparent"   />
 
                                         </VerticalStackLayout>
@@ -108,8 +143,18 @@
                             </CollectionView>
 
                         </VerticalStackLayout>
+
+                        </VerticalStackLayout>
+
+
+
                     </ScrollView>
 
+
+                    
+                    
+                    
+                    
 
                 </Grid>
             </VerticalStackLayout>

@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\admin_proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\admin_mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\activitydetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\activitydetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_revisedcontrols.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\admin_revisedcontrols.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\admin_mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_proposalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -37,6 +13,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\activitydetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\activitydetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\admin_proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\proposalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\admin_mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\admin_mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\admin_mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|c:\\users\\nesty\\programming\\mobapp2\\oneproposal_vertex-0.1a\\oneproposal_vertex 0.1a\\oneproposal_vertex 0.1a\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{52694E96-7757-4392-A582-BA5C84E9F9E0}|OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A.csproj|solutionrelative:oneproposal_vertex 0.1a\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,20 +49,30 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 82,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 283,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 60,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ADMIN_MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
-              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
-              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
-              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-15T10:53:50.745Z",
+              "DocumentIndex": 0,
+              "Title": "ADMIN_RevisedControls.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs",
+              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs",
+              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs*",
+              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs*",
+              "ViewState": "AgIAADcAAAAAAAAAAAAawE0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T16:33:52.459Z",
               "EditorCaption": ""
             },
             {
@@ -69,98 +83,85 @@
               "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml.cs",
               "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAA6wDcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T10:54:45.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ActivityDetailPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
-              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
-              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
-              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ADMIN_MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
+              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
+              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
+              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_MainPage.xaml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADsAAACWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-15T10:35:21.559Z",
+              "WhenOpened": "2025-03-15T10:53:50.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "ADMIN_ProposalPAge.xaml",
               "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml",
               "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml",
               "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml",
               "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwvzsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-15T11:00:22.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ActivityDetailPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml.cs",
-              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml.cs",
-              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwEkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:54:04.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ADMIN_RevisedControls.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs",
-              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs",
-              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs",
-              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_RevisedControls.xaml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAiwEEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:43:38.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ADMIN_ProposalPAge.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml.cs",
               "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml.cs",
-              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml.cs*",
-              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml.cs*",
-              "ViewState": "AgIAAMQAAAAAAAAAAAArwNUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml.cs",
+              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ADMIN_ProposalPAge.xaml.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAAOwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T11:00:35.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ProposalPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ProposalPage.xaml.cs",
               "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ProposalPage.xaml.cs",
               "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ProposalPage.xaml.cs",
               "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ProposalPage.xaml.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAkwKsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAUwGAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T11:48:36.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\MainPage.xaml",
+              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\MainPage.xaml",
+              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\MainPage.xaml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAvwGIAAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-16T14:09:38.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\MainPage.xaml.cs",
               "RelativeToolTip": "OneProposal_VERTEX 0.1A\\MainPage.xaml.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAYwN0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T11:48:54.938Z",
               "EditorCaption": ""
@@ -168,22 +169,44 @@
           ]
         },
         {
-          "DockedWidth": 88,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 77,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ActivityDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
+              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
+              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
+              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\ActivityDetailPage.xaml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwCYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-15T10:35:21.559Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 22,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 17,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "OneProposal_VERTEX 0.1A\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\Nesty\\Programming\\MobApp2\\OneProposal_VERTEX-0.1A\\OneProposal_VERTEX 0.1A\\OneProposal_VERTEX 0.1A\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "OneProposal_VERTEX 0.1A\\Resources\\Styles\\Colors.xaml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-16T14:00:56.558Z",
+              "EditorCaption": ""
             }
           ]
         }

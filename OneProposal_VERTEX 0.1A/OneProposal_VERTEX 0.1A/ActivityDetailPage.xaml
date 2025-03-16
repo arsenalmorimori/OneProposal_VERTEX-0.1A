@@ -92,8 +92,8 @@
             </HorizontalStackLayout>
 
             <VerticalStackLayout Spacing="10" x:Name="ButtonStatusUpdate" IsVisible="false">
-                <Button Text="ACCEPT" BackgroundColor="{StaticResource green}" FontAttributes="Bold" Margin="0,30,0,0"/>
-                <Button Text="REJECT" BackgroundColor="{StaticResource red}" FontAttributes="Bold"/>
+                <Button Text="ACCEPT" BackgroundColor="{StaticResource green}" Clicked="AdminAcceptButton" FontAttributes="Bold" Margin="0,30,0,0"/>
+                <Button Text="REJECT" BackgroundColor="{StaticResource red}" Clicked="AdminRejectButton" FontAttributes="Bold"/>
                 <Button Text="REVISE" BackgroundColor="{StaticResource orange}" Clicked="AdminReviseButton" FontAttributes="Bold"/>
             </VerticalStackLayout>
             <Button Text="REVISE" x:Name="ButtonRevised" Margin="0,30,0,0" BackgroundColor="{StaticResource orange}" IsVisible="false" Clicked="AdminReviseButtonMember" FontAttributes="Bold"/>

@@ -163,6 +163,7 @@ public partial class ProposalPage : ContentPage {
                 activity.Key = Insert.Key;
                 await firebase.Child("ActivityProposal_tbl").Child(Insert.Key).PatchAsync(activity);
 
+                await DisplayAlert("Success", "Activity Key : "+ Insert.Key +" has been " + notifMessage + " !", "OK");
 
                 // NOTIFICATION FOR  "CLUB"
                 await firebase.Child(("NotificationFor" + club) as string).PostAsync(activity.Title + " (" + activity.Club + ")  has been " + notifMessage);
